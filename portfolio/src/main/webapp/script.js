@@ -26,3 +26,14 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+
+async function showPoem() {
+    const responseFromServer = await fetch('/poem');
+    const poem = await responseFromServer.json();
+
+    const randomPoem = poem[Math.floor(Math.random() * poem.length)];
+  
+    const poemContainer = document.getElementById('poem-container');
+    poemContainer.innerText = randomPoem;
+  }

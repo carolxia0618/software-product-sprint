@@ -34,10 +34,21 @@
       <p>Central Park @New York City</p>
       <img src="/Image/IMG_9960.JPG" width="300" height="400" />
       <p>Brookline, MA</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Here is a poem that inspires me a lot.</p>
+      <button onclick="showPoem();">
+        Read it!
+      </button>
+      <p id="poem-container"></p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button onclick="addRandomGreeting()">Heyyy</button>
       <div id="greeting-container"></div>
+
+      <form action="/form-handler" method="POST">
+        <p>Please leave some comment you like below (contact info, feedback, jokes etc.):</p>
+        <textarea name="text-input">...</textarea>
+        <br/>
+        <input type="submit" />
+      </form>
     </div>
   </body>
 </html>

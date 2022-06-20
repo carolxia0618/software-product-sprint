@@ -22,6 +22,7 @@ public class PoemServlet extends HttpServlet {
     poems.add("Do it or do not do it - you will regret both.  by Soren Kierkegaard");        
     poems.add("Live in the moment, just take it all in. Pay attention to everything,right there and right then.  by Pat A. Fleming");      
 
+
     // Convert the server stats to JSON
     Poem poemPiece = new Poem(poems);
     String json = convertToJsonUsingGson(poemPiece);
